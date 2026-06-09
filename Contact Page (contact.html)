@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Tech Academy</title>
+
+    <style>
+        /* ===== GLOBAL STYLING ===== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef3f8;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: #0b3d91;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        /* FLEXBOX NAVIGATION */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background-image: url("images/contact-banner.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+
+            text-shadow: 2px 2px 10px black;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* ===== GRID LAYOUT ===== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* ===== CONTACT BOX ===== */
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ===== FORM STYLING ===== */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0b3d91;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #062a66;
+        }
+
+        /* ===== SOCIAL LINKS ===== */
+        .social {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social a {
+            text-decoration: none;
+            color: #0b3d91;
+            font-weight: bold;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="nav-container">
+            <h2>Tech Academy</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        Contact Us
+    </div>
+
+    <!-- MAIN -->
+    <main>
+
+        <h2>Get in Touch</h2>
+
+        <section class="contact-grid">
+
+            <!-- CONTACT INFO -->
+            <div class="box">
+                <h3>Contact Information</h3>
+                <p><strong>Address:</strong> Tech Academy, Nigeria</p>
+                <p><strong>Email:</strong> info@techacademy.com</p>
+                <p><strong>Phone:</strong> +234 800 000 0000</p>
+                <p><strong>Working Hours:</strong> Mon - Fri (8am - 5pm)</p>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="box">
+                <h3>Contact Form</h3>
+
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+
+                    <input type="email" placeholder="Your Email" required>
+
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="box">
+                <h3>Social Media</h3>
+
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Tech Academy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
